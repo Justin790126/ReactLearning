@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TodoHeader from './components/TodoHeader';
+import TodoList from './components/TodoList';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
   render() {
     return (
       <div>
-        <h1>Hello, World!</h1>
+        <TodoHeader />
+        <TodoList />
       </div>
     );
   }
